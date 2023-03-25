@@ -1,7 +1,7 @@
 require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 39:
+/***/ 361:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -89,8 +89,6 @@ function dynamicMethodCall(value, method, type, args, argTypes
     }
     // If args and argTypes are provided, check if their lengths match
     if (args && argTypes && args.length !== argTypes.length) {
-        console.log(args.length);
-        console.log(argTypes.length);
         throw new Error('The lengths of args and argTypes arrays do not match.');
     }
     // Instantiate the arguments using the argTypes parameter
@@ -140,7 +138,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __importStar(__nccwpck_require__(186));
-const dynamicMethods_1 = __nccwpck_require__(39);
+const dynamic_methods_1 = __nccwpck_require__(361);
 function getInputAsArray(name) {
     const input = core.getInput(name);
     if (!input)
@@ -163,7 +161,7 @@ function run() {
             }
             else {
                 try {
-                    const result = (0, dynamicMethods_1.dynamicMethodCall)(value, method, type, args, argTypes);
+                    const result = (0, dynamic_methods_1.dynamicMethodCall)(value, method, type, args, argTypes);
                     core.info(`The result of the method call is: ${result}`);
                     core.setOutput('result', result);
                     if (envVar) {

@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import {ArgType, dynamicMethodCall} from './dynamicMethods'
+import {ArgType, dynamicMethodCall} from './dynamic_methods'
 
 function getInputAsArray(name: string): string[] {
   const input = core.getInput(name)

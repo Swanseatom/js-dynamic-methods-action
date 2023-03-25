@@ -1,4 +1,4 @@
-import {dynamicMethodCall, ArgType} from '../src/dynamicMethods'
+import {dynamicMethodCall, ArgType} from '../src/dynamic_methods'
 import {expect, test} from '@jest/globals'
 
 test('should call the correct method on a string instance', () => {
