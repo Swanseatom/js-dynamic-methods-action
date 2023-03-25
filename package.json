@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
+  "name": "js-dynamic-methods-action",
   "version": "1.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Github actions for running javascript methods on strings, numbers or booleans",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/swanseatom/js-dynamic-methods-action.git"
   },
   "keywords": [
     "actions",

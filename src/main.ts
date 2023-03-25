@@ -31,6 +31,7 @@ async function run(): Promise<void> {
         core.setOutput('result', result)
 
         if (envVar) {
+          core.info(`The result has been assigned to: env.${envVar}`)
           core.exportVariable(envVar, result)
         }
       } catch (error) {

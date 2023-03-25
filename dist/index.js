@@ -89,6 +89,8 @@ function dynamicMethodCall(value, method, type, args, argTypes
     }
     // If args and argTypes are provided, check if their lengths match
     if (args && argTypes && args.length !== argTypes.length) {
+        console.log(args.length);
+        console.log(argTypes.length);
         throw new Error('The lengths of args and argTypes arrays do not match.');
     }
     // Instantiate the arguments using the argTypes parameter
@@ -165,6 +167,7 @@ function run() {
                     core.info(`The result of the method call is: ${result}`);
                     core.setOutput('result', result);
                     if (envVar) {
+                        core.info(`The result has been assigned to: env.${envVar}`);
                         core.exportVariable(envVar, result);
                     }
                 }
